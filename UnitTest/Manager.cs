@@ -30,6 +30,8 @@ namespace Program
 
         public int DivisaoEntreNumeros(NumeroModel model)
         {
+            if (model.Numero2 == 0) return 0;
+
             return _calculadoraService.Divisao(model);
         }
 

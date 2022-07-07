@@ -31,7 +31,8 @@ namespace UnitTests._301___Modelos_e_Estruturacao.Behaviours
             var numModel = new NumeroModelBuilder().BuildDefault().Create();
 
             // Inicializacao de mocks
-            _calculadoraService.Setup(i => i.Soma(numModel)).Returns(numModel.Numero1 + numModel.Numero2);
+            _calculadoraService.Setup(i => i.Soma(numModel))
+                .Returns(numModel.Numero1 + numModel.Numero2);
 
             // Area de ações
             var somaResult = _manager.SomaEntreNumeros(numModel);

@@ -32,7 +32,7 @@ namespace Program.Interfaces
         /// Divide dois numeros inteiros
         /// </summary>
         /// <param name="model">Modelo com os numeros sob quais ocorrerá a operação</param>
-        /// <returns>num1 * num2</returns>
+        /// <returns>num1 / num2</returns>
         int Divisao(NumeroModel model);
     }
 }

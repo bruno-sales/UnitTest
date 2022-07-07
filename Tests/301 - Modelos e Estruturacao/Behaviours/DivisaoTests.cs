@@ -33,7 +33,7 @@ namespace UnitTests._301___Modelos_e_Estruturacao.Behaviours
                 .Create();
 
             // Inicializacao de mocks
-            _calculadoraService.Setup(i => i.Divisao(numModel)).Returns(numModel.Numero1 / numModel.Numero2);
+            _calculadoraService.Setup(i => i.Divisao(numModel)).Returns(0);
 
             // Area de ações
             var divisaoResult = _manager.DivisaoEntreNumeros(numModel);
